@@ -24,7 +24,7 @@ build:
             registry: $DOCKER_REGISTRY
 
 deploy-to-kubernetes:
-    box: python:
+    box: python
     steps:
 
     # https://github.com/wercker/step-bash-template
