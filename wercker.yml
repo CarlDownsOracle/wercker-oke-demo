@@ -1,5 +1,5 @@
 build:
-    box: python
+    box: python:2.7
     steps:
 
     # Check that our application's tests are passing. Since this is a python
@@ -24,7 +24,7 @@ build:
             registry: $DOCKER_REGISTRY
 
 deploy-to-kubernetes:
-    box: python
+    box: python:2.7
     steps:
 
     # https://github.com/wercker/step-bash-template
