@@ -45,8 +45,7 @@ deploy-to-kubernetes:
     - kubectl:
         name: get cluster info
         server: $OKE_MASTER
-        username: $DOCKER_USERNAME
-        password: $DOCKER_PASSWORD
+        token: $OKE_TOKEN
         insecure-skip-tls-verify: true
         command: cluster-info
         
